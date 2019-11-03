@@ -1,0 +1,400 @@
+/*Шрифты*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab|Zilla+Slab&display=swap');
+
+body{
+	flex-direction: column;
+  	justify-content: space-between;
+}
+/*Header*/
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+.first-page-bg{
+	background-image: url(../img/first-page-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+.first-page-bg::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100vh;
+    opacity: 0.4; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0%, 0%, 0%, 0.9);
+}
+  /*Navigation*/
+.navbar-brand{
+	font-family: 'Montserrat';
+	font-size: 1.5em;
+	font-weight: 700;
+}
+.navbar-nav li{
+	padding-right: 20px;
+}
+.nav-link{
+	font-family: 'Montserrat';
+	font-size: 1em;
+}
+.show{
+	position: relative;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: rgba(255, 255, 255, 1);
+}
+/*Main*/
+.title{
+	text-transform: uppercase;
+	color: white;
+	font-size: 3.5em;
+	font-weight: 400;
+	font-family: 'Montserrat';
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.slogan{
+	color:white;
+	font-size: 1.4em;
+	font-family: 'Roboto Slab';
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.btn{
+	position: relative;
+	z-index: 1;
+	border-radius: 0rem;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+}
+.btn:hover{
+	border-radius: 0rem;
+}
+.btn-outline-danger{
+	color: #fff;
+	border-color: #fff;
+}
+.btn-outline-danger:hover{
+	color: #DC143C;
+	border-color: #fff;
+	background-color: #fff;
+}
+/*Services*/
+.container{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	font-size: 1.2em;
+	font-weight: 700;
+}
+h2::after{
+	content: '';
+	display: block;
+	margin: 2em auto;
+	height: 2px;
+	width: 50px;
+	border-bottom: 2px solid black;
+}
+.subtitle{
+	text-align: center;
+	font-family: 'Roboto slab';
+	font-size: 1em;
+	margin-bottom: 3em;
+}
+.card{
+	border: none;
+}
+.card-img-top{
+	width: 90px;
+	margin: auto;
+}
+.card-title{
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	text-align: center;
+	font-size: 1em;
+	font-weight: 700;
+	margin: 1em auto;
+}
+.card-text{
+	font-family: 'Roboto Slab';
+	font-size: .9em;
+	text-align: center;
+}
+/*About us*/
+.text-about{
+	font-family: 'Roboto Slab';
+	font-size: .9em;
+}
+.card-subtitle{	
+	font-family: 'Roboto slab';
+	font-size: 0.9em;
+}
+h5{
+	font-family: 'Montserrat';
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.card-work{
+	position: relative;
+	width: 263px;
+}
+.card-back-gray{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(166, 166, 166, 0.6);
+	opacity: 0;
+	transition: opacity .3s linear;
+}
+.card-work:hover .card-back-gray{
+	opacity: 1;
+}
+.card-icon-menu{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 100%;
+}
+.card-icon{
+	color: #fff;
+	padding: 8px;
+	margin-bottom: 25px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.card-icon:hover{
+	color: #fff;
+	background-color: #c0301c;
+	padding: 8px;
+	width: 30px;
+	height: 30px;
+	text-decoration: none;
+}
+/*Latest works*/
+.navbar-light .navbar-nav .nav-link{
+	color: black;
+	font-family: 'Roboto Slab';
+	font-size: 1em;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color: red;
+}
+.card-gallery{
+	position: relative;
+}
+.card-back-red{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(192, 48, 28, 0.7);
+	opacity: 0;
+	transition: opacity .3s linear;
+}
+.card-gallery:hover .card-back-red{
+	opacity: 1;
+}
+.card-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+h3{
+	font-family: 'Montserrat';
+	font-size: 1.2em;
+	font-weight: 400;
+	color: #fff;
+}
+.work-subtitle{
+	color: #fff;
+	font-family: 'Roboto Slab';
+	font-size: .8em;
+}
+.work-link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border: 1px solid #fff;
+	width: 100px;
+	height: 40px;
+	text-transform: uppercase;
+	color: #c96456;
+	background-color: #fff;
+	font-family: 'Roboto slab';
+	font-size: 1em;
+	line-height: 2.6;
+}
+.work-link:hover{
+	text-decoration: none;
+	color: #c96456;
+}
+.fas{
+	margin-left: 0.5em;
+}
+/*Call us*/
+.bg-call{
+	background-image: url(../img/call_us.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 369px;
+}
+.bg-call::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 369px;
+    opacity: 0.7; 
+	background: rgba(192, 48, 28, 0.7);
+	position: absolute;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.text-call{
+	position: relative;
+	z-index: 1;
+	color: white;
+	font-family: 'Roboto Slab';
+	font-size: 2em;
+	text-align: center;
+}
+/*Posts*/
+.date{
+	width: 75px;
+	height: 75px;
+	border: 2px solid #555555;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 1.5em;
+	text-align: center;
+	color: #555555;
+}
+.signature{
+	font-family: 'Roboto Slab';
+	font-size: 0.9em;
+}
+.read-more{
+	color: #555555;
+	font-family: 'Roboto Slab';
+	font-size: .9em;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color linear .3s;
+}
+.read-more:hover{
+	background-color: #fff;
+	color: #c0301c;
+	text-decoration: none;
+}
+.line{
+	height: 40px;
+	width: 100%;
+	border-bottom: 1px solid #dddddd;
+	margin-bottom: 40px;
+}
+.post-img{
+	max-width: 100%;
+}
+/*Clients*/
+.client{
+	margin: 0 35px;
+}
+.client-info{
+	font-family: 'Roboto Slab';
+	font-size: 1em;
+}
+.quote{
+	font-family: 'Roboto Slab';
+	font-size: 1.1em;
+}
+.slider{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #dddddd;
+	margin: 30px 3px;
+	transition: background-color .2s linear
+}
+.slider:hover{
+	background-color: #c0301c;
+}
+/*Contacts*/
+.type-adress{
+	font-family: 'Montserrat';
+	font-size: 1em;
+	text-transform: uppercase;
+}
+.text-adress{
+	font-family: 'Roboto Slab';
+	font-size: .8em;
+}
+.adress-link{
+	text-decoration: none;
+	color: #555555;
+}
+.adress-link:hover{
+	text-decoration: none;
+	color: #555555;
+}
+.form-control{
+	font-family: 'Roboto Slab';
+	font-size: .8em;
+	padding: 20px;
+}
+/*Footer*/
+.bg-danger{
+	background-color: #c0301c!important;
+}
+.footer-link{
+	width: 30px;
+	height: 30px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	margin: 3px;
+	padding: 0px 5px;
+}
+.underline::after{
+	content: '';
+	display: block;
+	margin: 2em auto;
+	height: 2px;
+	width: 50px;
+	border-bottom: 2px solid #fff;
+}
+.copyright{
+	font-family: 'Roboto Slab';
+	font-size: 0.8em;
+	text-transform: uppercase;
+	color: #fff;
+}
